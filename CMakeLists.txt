@@ -7,4 +7,9 @@ set(CMAKE_CXX_STANDARD 17)
 
 project(main LANGUAGES CXX)
 
-add_executable(main main.cpp)
+include_directories(./include)
+
+aux_source_directory(./src SRC)
+
+
+add_executable(main ${SRC})

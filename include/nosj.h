@@ -7,6 +7,8 @@
 #include <string>
 #include <string_view>
 
+#include "print.h"
+
 struct JSONObject {
     std::variant<
         std::monostate, // null
@@ -17,6 +19,10 @@ struct JSONObject {
         std::vector<JSONObject>,    // [42, "Bella"]
         std::map<std::string, JSONObject> // {"asoul": 42, "ee": 42}
     > inner;
+
+    void do_print() const {
+        print(inner);
+    }
 };
 
 struct JSONParser {
