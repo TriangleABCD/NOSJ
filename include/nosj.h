@@ -6,6 +6,8 @@
 #include <map>
 #include <string>
 #include <string_view>
+#include <charconv>
+#include <regex>
 
 #include "print.h"
 
@@ -27,6 +29,11 @@ struct JSONObject {
 
 struct JSONParser {
     JSONObject parser(std::string_view json);
+    template<class T>
+    std::optional<T> try_parse_num(std::string_view str) {
+        T value;
+        
+    }
 };
 
 
