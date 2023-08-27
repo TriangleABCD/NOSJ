@@ -6,10 +6,11 @@
         "Diana",
         "Eillen"
     ],
-    "Zhijiang": {
+    "ZhiJiang": {
         "size": 1024
     },
     "isTrue": false,
     "done": true,
-    "age": null
+    "age": null,
+    "seg": "abc\n123"
 }

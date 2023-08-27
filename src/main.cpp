@@ -12,5 +12,6 @@ int main(int argc, char** argv) {
     std::cout << std::boolalpha << obj.get<JSONDict>().at("isTrue").get<bool>() << std::endl;
     std::cout << std::boolalpha << obj.get<JSONDict>().at("done").get<bool>() << std::endl;
     std::cout << obj.get<JSONDict>().at("age").get<std::nullptr_t>() << std::endl;
+    std::cout <<obj.get<JSONDict>().at("seg").get<std::string>() << "ee" <<std::endl;
     return 0;
 }
