@@ -1,0 +1,15 @@
+{
+    "size": 4,
+    "members": [
+        "Ava",
+        "Bella",
+        "Diana",
+        "Eillen"
+    ],
+    "Zhijiang": {
+        "size": 1024
+    },
+    "isTrue": false,
+    "done": true,
+    "age": null
+}
